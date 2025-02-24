@@ -10,7 +10,6 @@
 body{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 body>*{
@@ -20,6 +19,14 @@ body>*{
 a{
     text-decoration: none;
     color: interhit;
+}
+
+button{
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
 }
 
 /* This section styles header */
@@ -34,8 +41,8 @@ header{
 header p{
     color: #F9FAF8;
     padding: 10px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 header ul {
@@ -50,7 +57,43 @@ header ul li a{
     font-size: 14px;
 }
 
-.main-text{
+/* This section styles the main div section */
+.main-div{
     display: flex;
-    direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1F2937;
+
+}
+
+.main-text{
+    width: 50%;
+    padding-right: 48px;
+}
+
+.main-text h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.main-text p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up-btn{
+    background-color: #3B82F6;
+    color: #F9FAF8;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.main-img{
+    background-color: #E5E7EB;
+    padding: 100px;
 }
