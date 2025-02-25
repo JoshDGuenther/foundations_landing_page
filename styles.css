@@ -61,7 +61,7 @@ header ul li a{
 .main-div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-stretch;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #1F2937;
@@ -71,6 +71,11 @@ header ul li a{
 .main-text{
     width: 50%;
     padding-right: 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
 }
 
 .main-text h1{
@@ -82,6 +87,7 @@ header ul li a{
 .main-text p{
     font-size: 18px;
     color: #E5E7EB;
+    margin-bottom: 12px;
 }
 
 .sign-up-btn{
@@ -90,12 +96,14 @@ header ul li a{
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 12px;
 }
 
 .main-img{
     background-color: #E5E7EB;
-    padding: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* This section styles the card section */
@@ -113,14 +121,94 @@ header ul li a{
 }
 
 .info-card{
-    background-color: #F9FAF8;
     padding: 24px;
-    border-radius: 5px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-card .info-card-img{
-    width: 100%;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3B82F6;
+    border-radius: 20px;
+    margin-bottom: 12px;}
+
+.info-card p{
+    font-size: 14px;
+    color: #374151;
+    text-align: center;
+}
+
+/* This section styles the quote */
+.quote-div{
     background-color: #E5E7EB;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+quote{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote-div p{
+    font-size: 18px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #1F2937;
+}
+
+/* This section styles the sign up div */
+.sign-up-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.sign-up-box{
+    background-color: #3B82F6;
+    width: 100%;
+    padding: 25px 100px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sign-up-text *{
+    color: #F9FAF8;
+}
+
+.sign-up-text h4{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.sign-up-text p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn-border{
+    border: 2px solid #F9FAF8;
+}
+
+/* This section styles the footer */
+footer{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 200px;
 }
